@@ -1,0 +1,198 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Paulo\\source\\repos\\CopaFilmes.WebApi\\CopaFilmes.WebApi\\CopaFilmes.WebApi.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Paulo\\source\\repos\\CopaFilmes.WebApi\\CopaFilmes.Domain\\CopaFilmes.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Paulo\\source\\repos\\CopaFilmes.WebApi\\CopaFilmes.Domain\\CopaFilmes.Domain.csproj",
+        "projectName": "CopaFilmes.Domain",
+        "projectPath": "C:\\Users\\Paulo\\source\\repos\\CopaFilmes.WebApi\\CopaFilmes.Domain\\CopaFilmes.Domain.csproj",
+        "packagesPath": "C:\\Users\\Paulo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Paulo\\source\\repos\\CopaFilmes.WebApi\\CopaFilmes.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Paulo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\Paulo\\source\\repos\\CopaFilmes.WebApi\\CopaFilmes.Service\\CopaFilmes.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Paulo\\source\\repos\\CopaFilmes.WebApi\\CopaFilmes.Service\\CopaFilmes.Service.csproj",
+        "projectName": "CopaFilmes.Service",
+        "projectPath": "C:\\Users\\Paulo\\source\\repos\\CopaFilmes.WebApi\\CopaFilmes.Service\\CopaFilmes.Service.csproj",
+        "packagesPath": "C:\\Users\\Paulo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Paulo\\source\\repos\\CopaFilmes.WebApi\\CopaFilmes.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Paulo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\Paulo\\source\\repos\\CopaFilmes.WebApi\\CopaFilmes.WebApi\\CopaFilmes.WebApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Paulo\\source\\repos\\CopaFilmes.WebApi\\CopaFilmes.WebApi\\CopaFilmes.WebApi.csproj",
+        "projectName": "CopaFilmes.WebApi",
+        "projectPath": "C:\\Users\\Paulo\\source\\repos\\CopaFilmes.WebApi\\CopaFilmes.WebApi\\CopaFilmes.WebApi.csproj",
+        "packagesPath": "C:\\Users\\Paulo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Paulo\\source\\repos\\CopaFilmes.WebApi\\CopaFilmes.WebApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Paulo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\Paulo\\source\\repos\\CopaFilmes.WebApi\\CopaFilmes.Domain\\CopaFilmes.Domain.csproj": {
+                "projectPath": "C:\\Users\\Paulo\\source\\repos\\CopaFilmes.WebApi\\CopaFilmes.Domain\\CopaFilmes.Domain.csproj"
+              },
+              "C:\\Users\\Paulo\\source\\repos\\CopaFilmes.WebApi\\CopaFilmes.Service\\CopaFilmes.Service.csproj": {
+                "projectPath": "C:\\Users\\Paulo\\source\\repos\\CopaFilmes.WebApi\\CopaFilmes.Service\\CopaFilmes.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Mvc.Versioning": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
