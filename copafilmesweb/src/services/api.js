@@ -5,7 +5,7 @@ export const api_lambda = axios.create({
 });
 
 const api = axios.create({
-  baseURL: 'http://oseventos.azurewebsites.net/api/v1.0/'
+  baseURL: 'http://localhost:62877/api/v1.0/'
 });
 
 export default api;

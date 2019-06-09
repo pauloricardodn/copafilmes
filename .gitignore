@@ -1,1 +1,8 @@
 copafilmesweb/node_modules/
+CopaFilmes.WebApi/.vs/
+CopaFilmes.WebApi/CopaFilmes.WebApi/obj/
+CopaFilmes.WebApi/CopaFilmes.WebApi/bin/
+CopaFilmes.WebApi/CopaFilmes.Domain/obj/
+CopaFilmes.WebApi/CopaFilmes.Domain/bin/
+CopaFilmes.WebApi/CopaFilmes.Service/obj/
+CopaFilmes.WebApi/CopaFilmes.Service/bin/

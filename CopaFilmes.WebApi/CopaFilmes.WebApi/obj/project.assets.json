@@ -4804,6 +4804,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
         "dependencies": {
+          "CopaFilmes.Domain": "1.0.0",
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0"
         },
         "compile": {
@@ -13118,11 +13119,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Paulo\\source\\repos\\CopaFilmes.WebApi\\CopaFilmes.WebApi\\CopaFilmes.WebApi.csproj",
-      "projectName": "CopaFilmes.WebApi",
-      "projectPath": "C:\\Users\\Paulo\\source\\repos\\CopaFilmes.WebApi\\CopaFilmes.WebApi\\CopaFilmes.WebApi.csproj",
+      "projectUniqueName": "C:\\CopaFilmes\\CopaFilmes.WebApi\\CopaFilmes.WebApi\\CopaFilmes.UI.Api.csproj",
+      "projectName": "CopaFilmes.UI.Api",
+      "projectPath": "C:\\CopaFilmes\\CopaFilmes.WebApi\\CopaFilmes.WebApi\\CopaFilmes.UI.Api.csproj",
       "packagesPath": "C:\\Users\\Paulo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Paulo\\source\\repos\\CopaFilmes.WebApi\\CopaFilmes.WebApi\\obj\\",
+      "outputPath": "C:\\CopaFilmes\\CopaFilmes.WebApi\\CopaFilmes.WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13141,11 +13142,11 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\Paulo\\source\\repos\\CopaFilmes.WebApi\\CopaFilmes.Domain\\CopaFilmes.Domain.csproj": {
-              "projectPath": "C:\\Users\\Paulo\\source\\repos\\CopaFilmes.WebApi\\CopaFilmes.Domain\\CopaFilmes.Domain.csproj"
+            "C:\\CopaFilmes\\CopaFilmes.WebApi\\CopaFilmes.Domain\\CopaFilmes.Domain.csproj": {
+              "projectPath": "C:\\CopaFilmes\\CopaFilmes.WebApi\\CopaFilmes.Domain\\CopaFilmes.Domain.csproj"
             },
-            "C:\\Users\\Paulo\\source\\repos\\CopaFilmes.WebApi\\CopaFilmes.Service\\CopaFilmes.Service.csproj": {
-              "projectPath": "C:\\Users\\Paulo\\source\\repos\\CopaFilmes.WebApi\\CopaFilmes.Service\\CopaFilmes.Service.csproj"
+            "C:\\CopaFilmes\\CopaFilmes.WebApi\\CopaFilmes.Service\\CopaFilmes.Service.csproj": {
+              "projectPath": "C:\\CopaFilmes\\CopaFilmes.WebApi\\CopaFilmes.Service\\CopaFilmes.Service.csproj"
             }
           }
         }

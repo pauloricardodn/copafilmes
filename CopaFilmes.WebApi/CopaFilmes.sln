@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29001.49
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CopaFilmes.WebApi", "CopaFilmes.WebApi\CopaFilmes.WebApi.csproj", "{4985CDC5-F47F-47E0-912F-C4C4F44131EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CopaFilmes.UI.Api", "CopaFilmes.WebApi\CopaFilmes.UI.Api.csproj", "{4985CDC5-F47F-47E0-912F-C4C4F44131EC}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CopaFilmes.Service", "CopaFilmes.Service\CopaFilmes.Service.csproj", "{DACB767E-1DA0-4CF5-B69E-E246F32C2DBE}"
 EndProject

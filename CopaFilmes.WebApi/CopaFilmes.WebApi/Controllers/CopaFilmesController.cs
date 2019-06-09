@@ -18,14 +18,15 @@ namespace CopaFilmes.WebApi.Controllers
 
         
         /// <summary>
-        /// 
+        /// Realizar a copa e retornar a lista com campeão e vice campeão em ordem
         /// </summary>
         /// <returns></returns>
         [HttpPost]
-        public async Task<ActionResult<IEnumerable<Filme>>> PostCopa([FromBody] List<Filme> filmes)
+        public ActionResult<IEnumerable<Filme>> Post([FromBody] List<Filme> filmes)
         {
+            List<Filme> Result =  _copaFilmesService.Copa(filmes);
             
-            return Ok();
+            return Ok(Result);
         }
     }
 }
