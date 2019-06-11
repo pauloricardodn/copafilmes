@@ -1,6 +1,7 @@
 import React from 'react';
-import {BrowserRouter, Router, Route, Switch} from 'react-router-dom';
-import SelecaoFilmes from '../copa/SelecaoFilmes';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import SelecaoFilmes from '../selecaoFilmes/SelecaoFilmes';
+import Resultado from '../resultado/Resultado';
 import '../../App.css';
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route path="/" component={SelecaoFilmes}/>
-          {/* <Route path="/selecaofilmes" component={SelecaoFilmes}/> */}
+          <Route path="/Resultado" component={Resultado}/>
         </Switch>
       </BrowserRouter>
     </div>

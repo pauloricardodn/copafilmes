@@ -12,10 +12,9 @@ export const getList = () => {
 
 export const postCopaFilmes = (list) => {
   const url = `CopaFilmes`;
-  console.log('service');
   return new Promise((resolve, reject) => {
       api
-          .put(url, list)
+          .post(url, list)
           .then(response => resolve(response.data))
           .catch(error => reject(error.response));
   });

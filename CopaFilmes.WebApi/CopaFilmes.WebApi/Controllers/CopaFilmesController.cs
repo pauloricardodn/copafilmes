@@ -3,6 +3,8 @@ using CopaFilmes.Domain.Entities;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using System.Linq;
+using System;
 
 namespace CopaFilmes.WebApi.Controllers
 {
@@ -22,11 +24,20 @@ namespace CopaFilmes.WebApi.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpPost]
-        public ActionResult<IEnumerable<Filme>> Post([FromBody] List<Filme> filmes)
+        public IActionResult Post([FromBody] List<Filme> filmes)
         {
-            List<Filme> Result =  _copaFilmesService.Copa(filmes);
-            
-            return Ok(Result);
+            try
+            {
+                if (filmes.Count() != 8)
+                    return BadRequest("Copa deve conter 8 filmes");
+                List<Filme> Result = _copaFilmesService.Copa(filmes);
+
+                return Ok(Result);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message + " | " + e.InnerException.Message);
+            }
         }
     }
 }
