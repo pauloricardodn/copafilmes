@@ -692,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Paulo\\source\\repos\\CopaFilmes.WebApi\\CopaFilmes.Domain\\CopaFilmes.Domain.csproj",
+      "projectUniqueName": "C:\\CopaFilmes\\CopaFilmes.WebApi\\CopaFilmes.Domain\\CopaFilmes.Domain.csproj",
       "projectName": "CopaFilmes.Domain",
-      "projectPath": "C:\\Users\\Paulo\\source\\repos\\CopaFilmes.WebApi\\CopaFilmes.Domain\\CopaFilmes.Domain.csproj",
+      "projectPath": "C:\\CopaFilmes\\CopaFilmes.WebApi\\CopaFilmes.Domain\\CopaFilmes.Domain.csproj",
       "packagesPath": "C:\\Users\\Paulo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Paulo\\source\\repos\\CopaFilmes.WebApi\\CopaFilmes.Domain\\obj\\",
+      "outputPath": "C:\\CopaFilmes\\CopaFilmes.WebApi\\CopaFilmes.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

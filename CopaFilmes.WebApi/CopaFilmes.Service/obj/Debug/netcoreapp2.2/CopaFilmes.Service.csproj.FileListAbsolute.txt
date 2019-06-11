@@ -7,3 +7,15 @@ C:\Users\Paulo\source\repos\CopaFilmes.WebApi\CopaFilmes.Service\bin\Debug\netco
 C:\Users\Paulo\source\repos\CopaFilmes.WebApi\CopaFilmes.Service\bin\Debug\netcoreapp2.2\CopaFilmes.Service.pdb
 C:\Users\Paulo\source\repos\CopaFilmes.WebApi\CopaFilmes.Service\obj\Debug\netcoreapp2.2\CopaFilmes.Service.dll
 C:\Users\Paulo\source\repos\CopaFilmes.WebApi\CopaFilmes.Service\obj\Debug\netcoreapp2.2\CopaFilmes.Service.pdb
+C:\CopaFilmes\CopaFilmes.WebApi\CopaFilmes.Service\obj\Debug\netcoreapp2.2\CopaFilmes.Service.csprojAssemblyReference.cache
+C:\CopaFilmes\CopaFilmes.WebApi\CopaFilmes.Service\obj\Debug\netcoreapp2.2\CopaFilmes.Service.csproj.CoreCompileInputs.cache
+C:\CopaFilmes\CopaFilmes.WebApi\CopaFilmes.Service\obj\Debug\netcoreapp2.2\CopaFilmes.Service.AssemblyInfoInputs.cache
+C:\CopaFilmes\CopaFilmes.WebApi\CopaFilmes.Service\obj\Debug\netcoreapp2.2\CopaFilmes.Service.AssemblyInfo.cs
+C:\CopaFilmes\CopaFilmes.WebApi\CopaFilmes.Service\obj\Debug\netcoreapp2.2\CopaFilmes.Service.dll
+C:\CopaFilmes\CopaFilmes.WebApi\CopaFilmes.Service\obj\Debug\netcoreapp2.2\CopaFilmes.Service.pdb
+C:\CopaFilmes\CopaFilmes.WebApi\CopaFilmes.Service\bin\Debug\netcoreapp2.2\CopaFilmes.Service.deps.json
+C:\CopaFilmes\CopaFilmes.WebApi\CopaFilmes.Service\bin\Debug\netcoreapp2.2\CopaFilmes.Service.dll
+C:\CopaFilmes\CopaFilmes.WebApi\CopaFilmes.Service\bin\Debug\netcoreapp2.2\CopaFilmes.Service.pdb
+C:\CopaFilmes\CopaFilmes.WebApi\CopaFilmes.Service\bin\Debug\netcoreapp2.2\CopaFilmes.Domain.dll
+C:\CopaFilmes\CopaFilmes.WebApi\CopaFilmes.Service\bin\Debug\netcoreapp2.2\CopaFilmes.Domain.pdb
+C:\CopaFilmes\CopaFilmes.WebApi\CopaFilmes.Service\obj\Debug\netcoreapp2.2\CopaFilmes.Service.csproj.CopyComplete

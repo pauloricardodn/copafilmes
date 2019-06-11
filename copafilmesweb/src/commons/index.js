@@ -4,7 +4,6 @@ import "./index.css";
 export const ButtonAction = (props) => {
   return (<button className={props.class}>{props.name}</button>);
 }
-const EstilosHeader = `backgroud-color: #6e6e6e;`;
 
 export const PageHeader = (props) => {
   return (

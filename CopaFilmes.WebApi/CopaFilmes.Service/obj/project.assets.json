@@ -272,6 +272,16 @@
         "runtime": {
           "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
         }
+      },
+      "CopaFilmes.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "compile": {
+          "bin/placeholder/CopaFilmes.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CopaFilmes.Domain.dll": {}
+        }
       }
     }
   },
@@ -851,10 +861,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "CopaFilmes.Domain/1.0.0": {
+      "type": "project",
+      "path": "../CopaFilmes.Domain/CopaFilmes.Domain.csproj",
+      "msbuildProject": "../CopaFilmes.Domain/CopaFilmes.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
+      "CopaFilmes.Domain >= 1.0.0",
       "Microsoft.AspNetCore.Http.Abstractions >= 2.2.0",
       "Microsoft.NETCore.App >= 2.2.0"
     ]
@@ -866,11 +882,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Paulo\\source\\repos\\CopaFilmes.WebApi\\CopaFilmes.Service\\CopaFilmes.Service.csproj",
+      "projectUniqueName": "C:\\CopaFilmes\\CopaFilmes.WebApi\\CopaFilmes.Service\\CopaFilmes.Service.csproj",
       "projectName": "CopaFilmes.Service",
-      "projectPath": "C:\\Users\\Paulo\\source\\repos\\CopaFilmes.WebApi\\CopaFilmes.Service\\CopaFilmes.Service.csproj",
+      "projectPath": "C:\\CopaFilmes\\CopaFilmes.WebApi\\CopaFilmes.Service\\CopaFilmes.Service.csproj",
       "packagesPath": "C:\\Users\\Paulo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Paulo\\source\\repos\\CopaFilmes.WebApi\\CopaFilmes.Service\\obj\\",
+      "outputPath": "C:\\CopaFilmes\\CopaFilmes.WebApi\\CopaFilmes.Service\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -888,7 +904,11 @@
       },
       "frameworks": {
         "netcoreapp2.2": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\CopaFilmes\\CopaFilmes.WebApi\\CopaFilmes.Domain\\CopaFilmes.Domain.csproj": {
+              "projectPath": "C:\\CopaFilmes\\CopaFilmes.WebApi\\CopaFilmes.Domain\\CopaFilmes.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

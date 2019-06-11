@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import SelecaoFilmes from '../selecaoFilmes/SelecaoFilmes';
 import Resultado from '../resultado/Resultado';
@@ -6,11 +7,11 @@ import '../../App.css';
 
 function App() {
   return (
-    <div className="App center">
+    <div className="App">
       <BrowserRouter>
         <Switch>
-          <Route path="/" component={SelecaoFilmes}/>
-          <Route path="/Resultado" component={Resultado}/>
+          <Route exact path="/" component={SelecaoFilmes}/>
+          <Route exact path="/Resultado" component={Resultado}/>
         </Switch>
       </BrowserRouter>
     </div>

@@ -6,10 +6,12 @@ export default class Resultado extends Component {
     constructor(props) {
         super(props);
         this.state = {
-          Resultado: []        
-        }; 
+          Resultado: props.location.state        
+        };
+        var cont = 1; 
     } 
     render() {
+      console.log(this.props)
       return (
         <div className='container col-11'>
           <PageHeader title="Resultado" descricao = "selecione 8 Filmes que você deseja "/>
@@ -19,7 +21,6 @@ export default class Resultado extends Component {
                 <Card className ="col-12">                
                 <CardBody className="row">
                   <div className="col-1">
-                    iº 
                   </div>
                   <div>
                     <CardTitle><b> {item.titulo}</b></CardTitle>

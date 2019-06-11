@@ -68,11 +68,11 @@ export default class SelecaoFilmes extends Component {
     if(list.length ===8){     
       postCopaFilmes(list)
       .then(data =>
-        this.props.history.push("/Resultado")
-        // this.props.history.push({
-        //   pathname:"/Resultado",
-        //   state: data
-        //}) 
+        //this.props.history.push("/Resultado")
+         this.props.history.push({
+          pathname:"/Resultado",
+          state: data
+        }) 
       );
       //.catch(error => this.handleError(error));      
     }else if(list.length < 8){
@@ -128,7 +128,7 @@ export default class SelecaoFilmes extends Component {
                 </div>
                 <div>
                   <CardTitle><b>{item.titulo}</b></CardTitle>
-                  <CardSubtitle>{item.ano}</CardSubtitle>
+                  <CardText>{item.ano}</CardText>
                 </div>                        
               </CardBody>
               </Card>
