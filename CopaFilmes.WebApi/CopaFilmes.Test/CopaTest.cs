@@ -19,7 +19,6 @@ namespace CopaFilmes.Test
             var RodadaResult = _copaFilmesService.Rodada(Filmes);
 
             Assert.IsType<List<Filme>>(RodadaResult);
-
             Assert.True(4 == RodadaResult.Count);
             Assert.True(RodadaResult.Exists(x => x.Titulo == "Vingadores: Guerra Infinita"));
             Assert.True(RodadaResult.Exists(x => x.Titulo == "Thor: Ragnarok"));
@@ -46,7 +45,6 @@ namespace CopaFilmes.Test
             List<Filme> Filmes = FilmesFake.FilmesFinal();
 
             var RodadaResult = _copaFilmesService.Rodada(Filmes);
-
             Assert.IsType<List<Filme>>(RodadaResult);
             Assert.True(1 == RodadaResult.Count);
             Assert.True(RodadaResult.Exists(x => x.Titulo == "Vingadores: Guerra Infinita"));
@@ -60,7 +58,6 @@ namespace CopaFilmes.Test
             var RodadaResult = _copaFilmesService.Copa(Filmes);
 
             Assert.IsType<List<Filme>>(RodadaResult);
-
             Assert.True(2 == RodadaResult.Count);
             Assert.True(RodadaResult[0].Titulo == "Vingadores: Guerra Infinita");
             Assert.True(RodadaResult[1].Titulo == "Os Incríveis 2");
