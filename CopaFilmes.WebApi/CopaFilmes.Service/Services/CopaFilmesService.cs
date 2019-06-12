@@ -37,7 +37,7 @@ namespace CopaFilmes.Service.Services
         /// </summary>
         /// <param name="filmes"></param>
         /// <returns></returns>
-        private List<Filme> Rodada(List<Filme> filmes)
+        public List<Filme> Rodada(List<Filme> filmes)
         {
             int Participantes = filmes.Count();
             List<Filme> FilmesRodada = new List<Filme>();

@@ -1,10 +1,7 @@
 ﻿using CopaFilmes.Domain.Entities;
 using CopaFilmes.Service.Services;
-using Microsoft.AspNetCore.Mvc;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using System.ComponentModel;
 using Xunit;
 
 namespace CopaFilmes.Test
@@ -17,50 +14,56 @@ namespace CopaFilmes.Test
         [Fact]
         public void QuartasFinais()
         {
-            // Arrange
             List<Filme> Filmes = FilmesFake.FilmesQuartasFinais();
-            List<Filme> FilmesEsperados = FilmesFake.ResultFilmesQuartasFinais();
 
-            // Act
             var RodadaResult = _copaFilmesService.Rodada(Filmes);
 
             Assert.IsType<List<Filme>>(RodadaResult);
 
-            Assert.True(FilmesEsperados.Count == RodadaResult.Count);
-            // Assert.InRange(items.All(shouldItem => FilmesEsperados.FindAll(isItem => isItem == shouldItem)));
+            Assert.True(4 == RodadaResult.Count);
+            Assert.True(RodadaResult.Exists(x => x.Titulo == "Vingadores: Guerra Infinita"));
+            Assert.True(RodadaResult.Exists(x => x.Titulo == "Thor: Ragnarok"));
+            Assert.True(RodadaResult.Exists(x => x.Titulo == "Os Incríveis 2"));
+            Assert.True(RodadaResult.Exists(x => x.Titulo == "Jurassic World: Reino Ameaçado"));
         }
 
         [Fact]
         public void SemiFinail()
         {
-            // Arrange
             List<Filme> Filmes = FilmesFake.FilmesSemiFinal();
-            List<Filme> FilmesEsperados = FilmesFake.ResultFilmesSemiFinal();
 
-            // Act
             var RodadaResult = _copaFilmesService.Rodada(Filmes);
 
             Assert.IsType<List<Filme>>(RodadaResult);
+            Assert.True(2 == RodadaResult.Count);
+            Assert.True(RodadaResult.Exists(x => x.Titulo == "Vingadores: Guerra Infinita"));
+            Assert.True(RodadaResult.Exists(x => x.Titulo == "Os Incríveis 2"));
+        }
 
-            Assert.True(FilmesEsperados.Count == RodadaResult.Count);
-            // Assert.InRange(items.All(shouldItem => FilmesEsperados.FindAll(isItem => isItem == shouldItem)));
+        [Fact]        
+        public void Final()
+        {
+            List<Filme> Filmes = FilmesFake.FilmesFinal();
+
+            var RodadaResult = _copaFilmesService.Rodada(Filmes);
+
+            Assert.IsType<List<Filme>>(RodadaResult);
+            Assert.True(1 == RodadaResult.Count);
+            Assert.True(RodadaResult.Exists(x => x.Titulo == "Vingadores: Guerra Infinita"));
         }
 
         [Fact]
-        public void Final()
+        public void Copa()
         {
-            // Arrange
-            List<Filme> Filmes = FilmesFake.FilmesFinal();
-            List<Filme> FilmesEsperados = FilmesFake.ResultFilmesFinal();
+            List<Filme> Filmes = FilmesFake.FilmesQuartasFinais();
 
-            // Act
-            var RodadaResult = _copaFilmesService.Rodada(Filmes);
+            var RodadaResult = _copaFilmesService.Copa(Filmes);
 
             Assert.IsType<List<Filme>>(RodadaResult);
 
-            Assert.True(FilmesEsperados.Count == RodadaResult.Count);
-            // Assert.InRange(items.All(shouldItem => FilmesEsperados.FindAll(isItem => isItem == shouldItem)));
+            Assert.True(2 == RodadaResult.Count);
+            Assert.True(RodadaResult[0].Titulo == "Vingadores: Guerra Infinita");
+            Assert.True(RodadaResult[1].Titulo == "Os Incríveis 2");
         }
-
     }
 }
