@@ -8,11 +8,12 @@ export const ButtonAction = (props) => {
 export const PageHeader = (props) => {
   return (
     <div className="pageHeader">
-      <p className="">CAMPEONATO DE TIMES</p> 
-
+      <p className="subTitulo">CAMPEONATO DE TIMES</p> 
       <h1 className="">{props.title}</h1>
-
-      <p className="">{props.descricao}</p>
+      <p className="linha"><strong>___</strong></p>
+      <div className="row center">
+        <p className="col-6"><strong>{props.descricao}</strong></p>
+      </div>      
     </div>
   );
 }

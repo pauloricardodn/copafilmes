@@ -1,4 +1,18 @@
 .pageHeader{
     background-color: #6e6e6e;
-    color: #ffffff;    
+    color: #ffffff; 
+    padding: 50px;
+    margin: 0 4px;  
+}
+.subTitulo{
+    color: #a8a8a8;
+    font-size: 17px;
+    margin: 0;
+}
+.linha{
+    color: #a8a8a8;
+    font-size: 30px;
+}
+.center{
+    justify-content: center;
 }

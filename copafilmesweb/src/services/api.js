@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const api_lambda = axios.create({
+export const api_azure = axios.create({
   baseURL: 'https://copadosfilmes.azurewebsites.net/api/'
 });
 

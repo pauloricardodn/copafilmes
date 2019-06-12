@@ -17,7 +17,6 @@ export default class SelecaoFilmes extends Component {
           show:false,
           title:"",
           text:""
-          //onConfirm:() => this.setState({show: false })
         }         
       };  
       this.getEventList = this.getEventList.bind(this);
@@ -68,13 +67,11 @@ export default class SelecaoFilmes extends Component {
     if(list.length ===8){     
       postCopaFilmes(list)
       .then(data =>
-        //this.props.history.push("/Resultado")
          this.props.history.push({
           pathname:"/Resultado",
           state: data
         }) 
-      );
-      //.catch(error => this.handleError(error));      
+      );     
     }else if(list.length < 8){
       this.setState({
         ...this.state,
@@ -98,35 +95,29 @@ export default class SelecaoFilmes extends Component {
   render() {
     return (
       <div className='container col-11'>
-        <PageHeader title="Fase de Seleção" descricao = "selecione 8 Filmes que você deseja "/>
-        <div className="row col-12">
-          <div className="col-md-4">
-            <p>{this.state.selecionados} de 8 selecionados</p>
-          </div>
-          <div className="col-4">
-          </div>
-          <div className="col-4">
-            <Button
-            className ="rigth"
-            type="button"
-            color="secondary margin-left"
-            onClick={this.handleSubmit}>GERAR MEU CAMPEONATO
-            </Button>
-          </div>
+        <PageHeader title="Fase de Seleção" descricao = "Selecione 8 Filmes que você deseja que entrem na competição e depois pressione o botão Gerar Meu Campeonato para prosseguir."/>
+        <div className="row col-12 espaco">
+          <p className="contador">Selecionados {this.state.selecionados} de 8 Filmes</p>        
+          <Button
+          className ="rigth"
+          type="button"
+          color="dark margin-left"
+          onClick={this.handleSubmit}>GERAR MEU CAMPEONATO
+          </Button>          
         </div>
-        <div className="row">
+        <div className="row center">
           {
             this.state.data.map((item, i) => (
-              <Card className ='divCard' key = {item.id}>
+              <Card className ='divCard card-selecao' key = {item.id}>
               
               <CardBody className="row">
-                <div className="col-1">
+                <div className="col-2">
                   <input                  
                   value = {item.id}
                   onChange={this.handleChangeCk}
                   type="checkbox" />
                 </div>
-                <div>
+                <div className = "cardDivText">
                   <CardTitle><b>{item.titulo}</b></CardTitle>
                   <CardText>{item.ano}</CardText>
                 </div>                        
