@@ -7,3 +7,5 @@ CopaFilmes.WebApi/CopaFilmes.Domain/bin/
 CopaFilmes.WebApi/CopaFilmes.Service/obj/
 CopaFilmes.WebApi/CopaFilmes.Service/bin/
 CopaFilmes.WebApi/CopaFilmes.UnitTest/obj/
+CopaFilmes.WebApi/CopaFilmes.Test/obj/
+CopaFilmes.WebApi/CopaFilmes.Test/bin/
